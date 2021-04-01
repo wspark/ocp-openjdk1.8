@@ -8,8 +8,8 @@ COPY run-java.sh /opt/jboss/container/java/run/run-java.sh
 
 COPY com/rockplace/HelloWorld.jar /deployments/ 
 
-RUN chown 185:root /logs /deployments -R
-RUN chmod 777 /logs /deployments -R
+RUN chown 185:root /logs /deployments /opt/jboss/container/java/run/run-java.sh -R
+RUN chmod 777 /logs /deployments /opt/jboss/container/java/run/run-java.sh -R
 
 # Allow arbitrary
 USER 185
