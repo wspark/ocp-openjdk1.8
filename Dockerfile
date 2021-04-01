@@ -1,0 +1,14 @@
+FROM bastion.ps.example.com:5000/redhat-openjdk-18/openjdk18-openshift:1.8-26
+    
+USER root
+RUN mkdir -p /logs 
+
+#ENV DISABLE_EMBEDDED_JMS_BROKER=true
+
+RUN chown 185:root /logs  -R
+RUN chmod 777 /logs -R
+
+# Allow arbitrary
+USER 185
+  
+EXPOSE 8080
