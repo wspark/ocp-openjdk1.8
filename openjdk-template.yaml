@@ -5,7 +5,7 @@ labels:
   xpaas: 1.0.0
 metadata:
   annotations:
-    description: Application template for EAP73 DeploymentConfig applications built using docker build.
+    description: Application template for OpenJDK1.8 DeploymentConfig applications built using docker build.
     iconClass: icon-jboss
     tags: javaee,java,openjdk
     version: 1.0.0
