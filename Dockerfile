@@ -10,5 +10,6 @@ RUN chmod 777 /logs -R
 
 # Allow arbitrary
 USER 185
-  
+
+CMD ["tail -f /dev/null"]  
 EXPOSE 8080
