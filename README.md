@@ -1,0 +1,1 @@
+# ocp-openjdk1.8
