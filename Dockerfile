@@ -14,6 +14,6 @@ RUN chmod 777 /logs /deployments /opt/jboss/container/java/run/run-java.sh -R
 # Allow arbitrary
 USER 185
 
-CMD ["tail", "-f", "/dev/null"]  
+#CMD ["tail", "-f", "/dev/null"]  
 
 EXPOSE 8080
