@@ -11,5 +11,5 @@ RUN chmod 777 /logs /deployments -R
 # Allow arbitrary
 USER 185
 
-#CMD ["tail -f /dev/null"]  
+CMD ["tail", "-f", "/dev/null"]  
 EXPOSE 8080
