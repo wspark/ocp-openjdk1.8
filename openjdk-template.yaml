@@ -165,7 +165,7 @@ parameters:
 - description: Java Options -DHOSTNAME=$HOSTNAME -Xms1024m -Xmx2048m -XX:+UseParallelOldGC -verbose:gc -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -XX:+PrintHeapAtGC -Xloggc:/opt/webserver/logs/gc_${HOSTNAME}.log -XX:-HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/opt/webserver/logs/java_pid_${HOSTNAME}.hprof -XX:+ExplicitGCInvokesConcurrent -Duser.timezone=GMT+09:00
   displayName: JAVA_OPTS 
   name: JAVA_OPTS
-  value: -DHOSTNAME=$HOSTNAME 
+  value: -DHOSTNAME=$HOSTNAME -XX:ParallelGCThreads=2
 - description: Namespace in which the ImageStreams for Red Hat Middleware images are
     installed. These ImageStreams are normally installed in the openshift namespace.
     You should only need to modify this if you've installed the ImageStreams in a
