@@ -4,7 +4,7 @@ USER root
 RUN mkdir -p /logs 
 
 #ENV DISABLE_EMBEDDED_JMS_BROKER=true
-RUN cp ./com/rockplace/HelloWorld.jar /deployments/ 
+RUN cp /com/rockplace/HelloWorld.jar /deployments/ 
 
 RUN chown 185:root /logs /deployments -R
 RUN chmod 777 /logs /deployments -R
