@@ -14,7 +14,7 @@ RUN chmod 777 /logs /deployments -R
 # Allow arbitrary
 USER 185
 
-CMD ["tail", "-f", "/dev/null"]  
-#CMD ["java", "-jar", "HelloWorld"]  
+#CMD ["tail", "-f", "/dev/null"]  
+CMD ["java", "-jar", "HelloWorld"]  
 
 EXPOSE 8080
